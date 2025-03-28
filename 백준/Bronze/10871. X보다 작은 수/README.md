@@ -28,3 +28,19 @@
 
  <p>X보다 작은 수를 입력받은 순서대로 공백으로 구분해 출력한다. X보다 작은 수는 적어도 하나 존재한다.</p>
 
+### ${{\textsf{\color{blue}메모}}}$
+
+아래와 같은 방법으로 풀 수도 있다.
+```js
+const x = Number(input[0].split(' ')[1]);
+const nums = input[1].split(' ').map(Number);
+
+let result = [];
+nums.forEach((num) => {
+    if (num < x) {
+        result.push(num);
+    }
+});
+
+console.log(result.join(' '));
+```
