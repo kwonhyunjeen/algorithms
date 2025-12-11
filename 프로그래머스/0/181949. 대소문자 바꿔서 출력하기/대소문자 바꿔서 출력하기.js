@@ -19,6 +19,16 @@ rl.on('line', function (line) {
             result += char.toUpperCase();
         }
     }
+
+    console.log(result);
+    
+    /*
+    const result = str.split('').map(char => {
+        return char === char.toUpperCase() 
+            ? char.toLowerCase() 
+            : char.toUpperCase();
+    }).join('');
     
     console.log(result);
+    */
 });
