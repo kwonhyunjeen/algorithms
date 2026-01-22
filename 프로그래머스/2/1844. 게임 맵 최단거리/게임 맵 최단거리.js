@@ -12,6 +12,7 @@ function solution(maps) {
     const queue = [
         { x: 0, y: 0, steps: 1 },
     ];
+    
     visitedMaps[0][0] = true;
     
     // 탐색 시작
@@ -30,6 +31,7 @@ function solution(maps) {
             { x: current.x + 1, y: current.y }, // bottom
             { x: current.x, y: current.y - 1 }, // left
         ];
+        
         for (let i = 0; i < nexts.length; i += 1) {
             const next = nexts[i];
             
